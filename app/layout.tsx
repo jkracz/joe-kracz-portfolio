@@ -1,6 +1,18 @@
 import "./globals.css";
 
-import { notoSerif } from "./fonts";
+import { Noto_Serif, Rubik } from "next/font/google";
+
+const noto_serif = Noto_Serif({
+    subsets: ["latin"],
+    display: "swap",
+    variable: "--font-noto-serif",
+});
+
+const rubik = Rubik({
+    subsets: ["latin"],
+    display: "swap",
+    variable: "--font-rubik",
+});
 
 export const metadata = {
     title: "Joe Kracz",
@@ -11,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body className={notoSerif.className}>{children}</body>
+            <body className={`${rubik.variable} ${noto_serif.variable} bg-darkness text-white`}>{children}</body>
         </html>
     );
 }

@@ -4,7 +4,7 @@ import cornerLogo from "./../public/corner-logo.svg";
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <main className="container mx-auto my-auto">
             <div>
                 <Image src={cornerLogo} alt="Joe Kracz name logo" />
                 <span>About</span>
@@ -13,12 +13,14 @@ export default function Home() {
                 <span>Let's Connect</span>
             </div>
             <div>
-                <h1>Hi, I'm Joe Kracz</h1>
+                <h1 className="font-rubik text-xl">
+                    Hi, I'm <span className="text-growth">Joe Kracz</span>
+                </h1>
                 <h3>A Product Engineer based in Sunnyvale, CA</h3>
                 <Image src={joeGlobe} alt="Joe Kracz sitting on a globe" />
             </div>
             <div>
-                <h2>About</h2>
+                <h2 className="font-rubik text-xl">About</h2>
                 <p>
                     Building things that matter - that's what I'm passionate about. With a background in software
                     engineering, I've spent the last 4 years as a product manager, immersed in the fast-paced world of
