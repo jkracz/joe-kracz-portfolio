@@ -15,7 +15,7 @@ module.exports = {
                 growth: {
                     light: "#7EE7AC",
                     DEFAULT: "#2ECC71",
-                    dark: "009943",
+                    dark: "#009943",
                 },
                 darkness: "#171614",
             },
