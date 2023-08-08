@@ -25,14 +25,18 @@ export default function Home() {
                     </a>
                 </div>
             </div>
-            <div>
-                <h1 className="font-rubik text-xl">
-                    Hi, I'm <span className="text-growth">Joe Kracz</span>
-                </h1>
-                <h3>A Product Engineer based in Sunnyvale, CA</h3>
+            <div className="flex flex-wrap">
+                <div className="justify-center">
+                    <h1 className="font-rubik text-6xl font-semibold italic">
+                        Hi, I'm <span className="text-growth">Joe Kracz</span>
+                    </h1>
+                    <h3 className="font-rubik text-3xl font-semibold">
+                        A <span className="text-growth">Product Engineer</span> based in Sunnyvale, CA
+                    </h3>
+                </div>
                 <Image src={joeGlobe} alt="Joe Kracz sitting on a globe" />
             </div>
-            <section className="px-60">
+            <section id="about" className="px-60">
                 <h2 className="font-rubik text-5xl mb-6 font-semibold italic text-center">ABOUT</h2>
                 <p className="text-2xl mb-4">Building things that matter - that's what I'm passionate about.</p>
                 <p className="text-2xl mb-4">
@@ -46,19 +50,21 @@ export default function Home() {
                     world of software engineering, eager to apply the strategic lens I've developed as a product manager
                     to solve intricate technical problems.
                 </p>
-                <button className="font-rubik italic font-semibold text-2xl rounded bg-growth text-white py-2 px-20 hover:bg-growth-light hover:text-white transition-colors duration-200">
-                    LET'S CONNECT
-                </button>
+                <div className="flex justify-center">
+                    <button className="font-rubik italic font-semibold text-2xl rounded bg-growth text-white py-2 px-20 hover:bg-growth-light hover:text-white transition-colors duration-200">
+                        LET'S CONNECT
+                    </button>
+                </div>
             </section>
 
-            <div>
+            <div id="projects">
                 <h2> Here's a showcase of my projects</h2>
             </div>
-            <div>
+            <div id="resume">
                 <h2>Resume</h2>
                 <span>Download here</span>
             </div>
-            <div>
+            <div id="contact">
                 <h2>Let's Connect</h2>
                 {/* some linkouts to email, github, linkedin, etc */}
             </div>
