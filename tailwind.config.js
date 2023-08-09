@@ -18,6 +18,11 @@ module.exports = {
                     dark: "#009943",
                 },
                 darkness: "#171614",
+                ocean: {
+                    light: "#3AAAF2",
+                    DEFAULT: "#0197F6",
+                    dark: "#014F82",
+                },
             },
         },
     },
