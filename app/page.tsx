@@ -4,30 +4,12 @@ import cornerLogo from "./../public/corner-logo.svg";
 import ghLogo from "./../public/social-icons/github.svg";
 import liLogo from "./../public/social-icons/linkedin.svg";
 import mailLogo from "./../public/social-icons/mail.svg";
+import Navbar from "./navbar";
 
 export default function Home() {
     return (
-        <div>
-            <div className="font-rubik top-0 w-full bg-darkness z-50 py-2 px-60 shadow-md flex justify-between items-center">
-                <Image src={cornerLogo} alt="Joe Kracz name logo" height={65} />
-                <div className="space-x-4">
-                    <a href="#about" className="text-white hover:text-growth transition-colors duration-200">
-                        About
-                    </a>
-                    <a href="#projects" className="text-white hover:text-growth transition-colors duration-200">
-                        Portfolio
-                    </a>
-                    <a href="#resume" className="text-white hover:text-growth transition-colors duration-200">
-                        Resume
-                    </a>
-                    <a
-                        href="#contact"
-                        className="px-4 py-2 bg-growth text-white rounded hover:bg-growth-dark transition-colors duration-200"
-                    >
-                        Let's Connect
-                    </a>
-                </div>
-            </div>
+        <div className="mt-16">
+            <Navbar></Navbar>
             <div className="mb-20 px-60 flex flex-wrap justify-center items-center">
                 <div className=" flex-auto">
                     <h1 className="font-rubik text-7xl font-semibold italic">Hi,</h1>
@@ -93,7 +75,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="py-16 px-60">
+            <section id="connect" className="py-16 px-60">
                 <div className="flex flex-wrap md:flex-nowrap justify-between items-start px-8">
                     {/* Let's Connect Blurb */}
                     <div className="w-full md:w-1/3 md:pr-12 mb-12 md:mb-0 text-white">
@@ -108,7 +90,7 @@ export default function Home() {
                     <div className="w-full md:w-2/3 space-y-6">
                         {/* Github Tile */}
                         <a
-                            href="https://github.com/your-username"
+                            href="https://github.com/jkracz"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center bg-slate-600 p-4 rounded-lg transition transform hover:scale-105 hover:bg-purple-800"
