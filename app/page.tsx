@@ -1,6 +1,9 @@
 import Image from "next/image";
 import joeGlobe from "./../public/joe-globe.svg";
 import cornerLogo from "./../public/corner-logo.svg";
+import ghLogo from "./../public/social-icons/github.svg";
+import liLogo from "./../public/social-icons/linkedin.svg";
+import mailLogo from "./../public/social-icons/mail.svg";
 
 export default function Home() {
     return (
@@ -40,14 +43,14 @@ export default function Home() {
                 </div>
             </div>
             <section id="about" className="px-60">
-                <h2 className="font-rubik text-5xl mb-6 font-semibold italic text-center">ABOUT</h2>
-                <p className="text-2xl mb-4">Building things that matter - that's what I'm passionate about.</p>
-                <p className="text-2xl mb-4">
+                <h2 className="font-rubik text-4xl mb-6 font-semibold italic text-center">About</h2>
+                <p className="text-xl mb-4">Building things that matter - that's what I'm passionate about.</p>
+                <p className="text-xl mb-4">
                     With a background in software engineering, I've spent the last 4 years as a product manager,
                     immersed in the fast-paced world of fintech. I've had the privilege of working with innovative teams
                     to create empowering products that educate and equip individuals to better manage their finances.
                 </p>
-                <p className="text-2xl mb-10">
+                <p className="text-xl mb-10">
                     Yet, amidst this fulfilling journey, I found myself missing the unique thrill of 'boots on the
                     ground' problem-solving that's central to engineering. So I decided to dive back into the world of
                     software engineering, eager to apply the strategic lens I've developed as a product manager to solve
@@ -90,45 +93,48 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="px-60 py-16">
-                <div className="flex flex-wrap md:flex-nowrap justify-between">
+            <section className="py-16 px-60">
+                <div className="flex flex-wrap md:flex-nowrap justify-between items-start px-8">
                     {/* Let's Connect Blurb */}
-                    <div className="w-full md:w-1/3 md:pr-12 mb-12 md:mb-0">
+                    <div className="w-full md:w-1/3 md:pr-12 mb-12 md:mb-0 text-white">
                         <h2 className="font-rubik text-4xl mb-8">Let's Connect!</h2>
-                        <p className="font-noto-serif text-lg">
+                        <p className="text-xl">
                             I'm always open to discussing product design, development work, or potential opportunities.
                             Don't hesitate to reach out!
                         </p>
                     </div>
 
                     {/* Connect Tiles */}
-                    <div className="w-full md:w-2/3">
+                    <div className="w-full md:w-2/3 space-y-6">
                         {/* Github Tile */}
                         <a
                             href="https://github.com/your-username"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block bg-indigo-500 p-6 mb-6 rounded-xl shadow-lg transition transform hover:bg-indigo-600"
+                            className="flex items-center bg-slate-600 p-4 rounded-lg transition transform hover:scale-105 hover:bg-purple-800"
                         >
+                            <Image src={ghLogo} alt="GitHub logo" className="h-8 w-8 mr-4" />
                             <h3 className="font-rubik text-xl text-white">GitHub</h3>
                         </a>
 
                         {/* LinkedIn Tile */}
                         <a
-                            href="https://linkedin.com/in/your-linkedin-handle"
+                            href="https://linkedin.com/in/joe-kracz-219829119/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block bg-green-500 p-6 mb-6 rounded-xl shadow-lg transition transform hover:bg-green-600"
+                            className="flex items-center bg-slate-600 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-600"
                         >
+                            <Image src={liLogo} alt="LinkedIn logo" className="h-8 w-8 mr-4" />
                             <h3 className="font-rubik text-xl text-white">LinkedIn</h3>
                         </a>
 
                         {/* Mail Tile */}
                         <a
-                            href="mailto:your-email@gmail.com"
-                            className="block bg-red-500 p-6 rounded-xl shadow-lg transition transform hover:bg-red-600"
+                            href="mailto:joseph.kracz@gmail.com"
+                            className="flex items-center bg-slate-600 p-4 rounded-lg transition transform hover:scale-105 hover:bg-yellow-500"
                         >
-                            <h3 className="font-rubik text-xl text-white">Email Me</h3>
+                            <Image src={mailLogo} alt="Email logo" className="h-8 w-8 mr-4" />
+                            <h3 className="font-rubik text-xl text-white">Email</h3>
                         </a>
                     </div>
                 </div>
