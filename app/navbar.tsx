@@ -1,13 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+import hamburgerMenu from "./../public/icons/hamburger-menu.svg";
+import xIcon from "./../public/icons/x-icon.svg";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <>
-            <div className="px-60 py-4 shadow-md fixed w-full z-50 top-0">
+        <div>
+            <div className="px-60 py-4 shadow-md fixed w-full z-50 top-0 bg-darkness">
                 <div className="container mx-auto flex justify-between items-center">
                     <img src="/corner-logo.svg" alt="Logo" className="h-12" />
 
@@ -22,7 +25,11 @@ function Navbar() {
 
                         {/* Hamburger Icon */}
                         <div onClick={() => setMenuOpen(!menuOpen)} className="cursor-pointer z-60">
-                            {menuOpen ? <div>X</div> : <div>MENU</div>}
+                            {!menuOpen ? (
+                                <Image src={hamburgerMenu} alt="hamburger menu icon" className="h-10 w-10" />
+                            ) : (
+                                <Image src={xIcon} alt="x icon menu" className="h-10 w-10" />
+                            )}
                         </div>
                     </div>
                 </div>
@@ -34,16 +41,16 @@ function Navbar() {
                         <a href="#about" onClick={() => setMenuOpen(false)}>
                             About
                         </a>
-                        <a href="#projects" onClick={() => setMenuOpen(false)}>
+                        <a href="#portfolio" onClick={() => setMenuOpen(false)}>
                             Projects
                         </a>
-                        <a href="#contact" onClick={() => setMenuOpen(false)}>
-                            Contact
+                        <a href="#resume" onClick={() => setMenuOpen(false)}>
+                            Resume
                         </a>
                     </div>
                 </div>
             )}
-        </>
+        </div>
     );
 }
 

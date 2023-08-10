@@ -1,4 +1,5 @@
 import "./globals.css";
+import Navbar from "./navbar";
 
 import { Noto_Serif, Rubik } from "next/font/google";
 
@@ -23,7 +24,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body className={`${rubik.variable} ${noto_serif.variable} bg-darkness text-white`}>{children}</body>
+            <body className={`${rubik.variable} ${noto_serif.variable} bg-darkness text-white`}>
+                <Navbar></Navbar>
+                {children}
+            </body>
         </html>
     );
 }

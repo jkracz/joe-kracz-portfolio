@@ -1,16 +1,15 @@
 import Image from "next/image";
 import joeGlobe from "./../public/joe-globe.svg";
-import cornerLogo from "./../public/corner-logo.svg";
-import ghLogo from "./../public/social-icons/github.svg";
-import liLogo from "./../public/social-icons/linkedin.svg";
-import mailLogo from "./../public/social-icons/mail.svg";
+import ghLogo from "./../public/icons/github.svg";
+import liLogo from "./../public/icons/linkedin.svg";
+import mailLogo from "./../public/icons/mail.svg";
 import Navbar from "./navbar";
 
 export default function Home() {
     return (
-        <div className="mt-16">
-            <Navbar></Navbar>
-            <div className="mb-20 px-60 flex flex-wrap justify-center items-center">
+        <div className="pt-20 px-60">
+            {/* <Navbar></Navbar> */}
+            <div className="flex flex-wrap justify-center items-center">
                 <div className=" flex-auto">
                     <h1 className="font-rubik text-7xl font-semibold italic">Hi,</h1>
                     <h1 className="font-rubik text-7xl font-semibold italic">
@@ -20,11 +19,12 @@ export default function Home() {
                         A <span className="text-growth">Product Engineer</span> based in Sunnyvale, CA
                     </h3>
                 </div>
-                <div className=" flex-auto">
+                <div className="flex-auto">
                     <Image src={joeGlobe} alt="Joe Kracz sitting on a globe" width={450} height={750} />
+                    {/* <Image src={joeGlobe} alt="Joe Kracz sitting on a globe" className="h-full" /> */}
                 </div>
             </div>
-            <section id="about" className="px-60">
+            <section id="about" className="pt-20">
                 <h2 className="font-rubik text-4xl mb-6 font-semibold italic text-center">About</h2>
                 <p className="text-xl mb-4">Building things that matter - that's what I'm passionate about.</p>
                 <p className="text-xl mb-4">
@@ -45,10 +45,10 @@ export default function Home() {
                 </div>
             </section>
 
-            <div id="projects">
+            <div id="portfolio" className="pt-20">
                 <h2> Here's a showcase of my projects</h2>
             </div>
-            <section className="p-8">
+            <section id="resume" className="pt-20">
                 <div className="max-w-3xl mx-auto text-center">
                     <h2 className="font-rubik text-3xl mb-4">My Resume</h2>
                     <p className="font-noto-serif text-xl mb-6">
@@ -75,7 +75,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section id="connect" className="py-16 px-60">
+            <section id="connect" className="pt-20">
                 <div className="flex flex-wrap md:flex-nowrap justify-between items-start px-8">
                     {/* Let's Connect Blurb */}
                     <div className="w-full md:w-1/3 md:pr-12 mb-12 md:mb-0 text-white">
