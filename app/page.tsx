@@ -3,7 +3,11 @@ import joeGlobe from "./../public/joe-globe.svg";
 import ghLogo from "./../public/icons/github.svg";
 import liLogo from "./../public/icons/linkedin.svg";
 import mailLogo from "./../public/icons/mail.svg";
-import Navbar from "./navbar";
+import ProjectsSection from "./projects-section";
+
+import { ProjectType } from "./types";
+
+const projects: Array<ProjectType> = require("./../public/projects.json");
 
 export default function Home() {
     return (
@@ -43,9 +47,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <div id="portfolio" className="pt-24">
-                <h2> Here's a showcase of my projects</h2>
-            </div>
+            <ProjectsSection projects={projects}></ProjectsSection>
             <section id="resume" className="pt-24">
                 <div className="max-w-3xl mx-auto text-center">
                     <h2 className="font-rubik text-3xl mb-4">My Resume</h2>

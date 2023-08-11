@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navbar from "./navbar";
+import Navbar from "./components/navbar";
 
 import { Noto_Serif, Rubik } from "next/font/google";
 

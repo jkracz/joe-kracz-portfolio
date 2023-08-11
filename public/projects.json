@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Kracz Clothing Co",
+        "description": "Kracz Clothing Co. is a comprehensive and advanced digital storefront built with React, Firebase, and Redux. The platform offers seamless browsing of clothing by category, secure user authentication, and an interactive shopping cart experience.",
+        "imageUrl": "https://github.com/jkracz/kracz-clothing-co/raw/main/public/readmeScreenshots/storefront.png",
+        "liveUrl": "https://kraczclothingco.netlify.app/",
+        "githubUrl": "https://github.com/jkracz/kracz-clothing-co"
+    },
+    {
+        "id": 2,
+        "title": "Coffee Shop Search",
+        "description": "Explore and vote for your favorite coffee shops with Coffee Shop Search! This interactive Next.js app offers a location-based search, detailed information about each coffee shop, and an upvoting feature. Filled with stunning coffee images and powered by various APIs, it's a delightful blend of aesthetics and functionality.",
+        "imageUrl": "https://github.com/jkracz/coffee-shop-search/raw/main/public/static/screenshot.png",
+        "liveUrl": "https://coffeeshopsearch.netlify.app/",
+        "githubUrl": "https://github.com/jkracz/coffee-shop-search"
+    },
+    {
+        "id": 3,
+        "title": "RoBros",
+        "description": "Discover a world of unique robot friends with RoBros! Search and filter through an interactive directory. Each robot has a distinct identity, generated using data from APIs. A playful project crafted with React, demonstrating the power of modern frontend development.",
+        "imageUrl": "https://github.com/jkracz/robros/raw/main/public/screenshot.png",
+        "liveUrl": "https://jkracz.github.io/robros/",
+        "githubUrl": "https://github.com/jkracz/robros"
+    }
+]

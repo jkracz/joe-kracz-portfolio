@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import hamburgerMenu from "./../public/icons/hamburger-menu.svg";
-import xIcon from "./../public/icons/x-icon.svg";
+import hamburgerMenu from "./../../public/icons/hamburger-menu.svg";
+import xIcon from "./../../public/icons/x-icon.svg";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
