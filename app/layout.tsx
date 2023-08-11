@@ -27,6 +27,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <body className={`${rubik.variable} ${noto_serif.variable} bg-darkness text-white`}>
                 <Navbar></Navbar>
                 {children}
+                <footer className="font-rubik font-semibold text-slate-300 pt-20 pb-10 flex justify-center">
+                    2023 Joe Kracz. All rights reserved.
+                </footer>
             </body>
         </html>
     );

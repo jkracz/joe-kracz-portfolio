@@ -7,8 +7,7 @@ import Navbar from "./navbar";
 
 export default function Home() {
     return (
-        <div className="pt-20 px-60">
-            {/* <Navbar></Navbar> */}
+        <div className="pt-24 px-10 md:px-20 lg:px-30 xl:px-60">
             <div className="flex flex-wrap justify-center items-center">
                 <div className=" flex-auto">
                     <h1 className="font-rubik text-7xl font-semibold italic">Hi,</h1>
@@ -21,10 +20,9 @@ export default function Home() {
                 </div>
                 <div className="flex-auto">
                     <Image src={joeGlobe} alt="Joe Kracz sitting on a globe" width={450} height={750} />
-                    {/* <Image src={joeGlobe} alt="Joe Kracz sitting on a globe" className="h-full" /> */}
                 </div>
             </div>
-            <section id="about" className="pt-20">
+            <section id="about" className="pt-24">
                 <h2 className="font-rubik text-4xl mb-6 font-semibold italic text-center">About</h2>
                 <p className="text-xl mb-4">Building things that matter - that's what I'm passionate about.</p>
                 <p className="text-xl mb-4">
@@ -45,10 +43,10 @@ export default function Home() {
                 </div>
             </section>
 
-            <div id="portfolio" className="pt-20">
+            <div id="portfolio" className="pt-24">
                 <h2> Here's a showcase of my projects</h2>
             </div>
-            <section id="resume" className="pt-20">
+            <section id="resume" className="pt-24">
                 <div className="max-w-3xl mx-auto text-center">
                     <h2 className="font-rubik text-3xl mb-4">My Resume</h2>
                     <p className="font-noto-serif text-xl mb-6">
@@ -75,7 +73,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section id="connect" className="pt-20">
+            <section id="connect" className="pt-24">
                 <div className="flex flex-wrap md:flex-nowrap justify-between items-start px-8">
                     {/* Let's Connect Blurb */}
                     <div className="w-full md:w-1/3 md:pr-12 mb-12 md:mb-0 text-white">
