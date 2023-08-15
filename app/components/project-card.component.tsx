@@ -1,4 +1,4 @@
-import { ProjectCardPropsType } from "./../types";
+import { ProjectCardPropsType } from "../types";
 
 function ProjectCard({ project }: ProjectCardPropsType) {
     return (

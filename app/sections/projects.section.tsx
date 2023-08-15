@@ -1,5 +1,5 @@
-import ProjectCard from "./components/project-card";
-import { ProjectSectionPropsType } from "./types";
+import ProjectCard from "../components/project-card.component";
+import { ProjectSectionPropsType } from "../types";
 
 function ProjectsSection({ projects }: ProjectSectionPropsType) {
     return (
