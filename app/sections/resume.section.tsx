@@ -2,7 +2,7 @@ function ResumeSection() {
     return (
         <section id="resume" className="pt-24">
             <div className="max-w-3xl mx-auto text-center">
-                <h2 className="font-rubik text-3xl mb-4">My Resume</h2>
+                <h2 className="font-rubik text-4xl mb-8 text-center">My Resume</h2>
                 <p className="font-noto-serif text-xl mb-6">
                     Want to see my professional journey in detail? Check out my resume below.
                 </p>
