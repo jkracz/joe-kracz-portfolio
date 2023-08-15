@@ -24,7 +24,7 @@ function ConnectSection() {
                         href="https://github.com/jkracz"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center bg-slate-600 p-4 rounded-lg transition transform hover:scale-105 hover:bg-purple-800"
+                        className="flex items-center bg-slate-600 p-4 rounded-lg transition transform hover:scale-105 hover:bg-purple-800 active:bg-purple-800"
                     >
                         <Image src={ghLogo} alt="GitHub logo" className="h-8 w-8 mr-4" />
                         <h3 className="font-rubik text-xl text-white">GitHub</h3>
@@ -35,7 +35,7 @@ function ConnectSection() {
                         href="https://linkedin.com/in/joe-kracz-219829119/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center bg-slate-600 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-600"
+                        className="flex items-center bg-slate-600 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-600 active:bg-blue-600"
                     >
                         <Image src={liLogo} alt="LinkedIn logo" className="h-8 w-8 mr-4" />
                         <h3 className="font-rubik text-xl text-white">LinkedIn</h3>
@@ -44,7 +44,7 @@ function ConnectSection() {
                     {/* Mail Tile */}
                     <a
                         href="mailto:joseph.kracz@gmail.com"
-                        className="flex items-center bg-slate-600 p-4 rounded-lg transition transform hover:scale-105 hover:bg-yellow-500"
+                        className="flex items-center bg-slate-600 p-4 rounded-lg transition transform hover:scale-105 hover:bg-yellow-500 active::bg-yellow-500"
                     >
                         <Image src={mailLogo} alt="Email logo" className="h-8 w-8 mr-4" />
                         <h3 className="font-rubik text-xl text-white">Email</h3>

@@ -24,6 +24,7 @@ module.exports = {
                     dark: "#014F82",
                 },
             },
+            backgroundColor: ["active"],
         },
     },
     plugins: [],
