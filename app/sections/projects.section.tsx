@@ -10,12 +10,12 @@ function ProjectsSection({ projects }: ProjectSectionPropsType) {
                     <ProjectCard key={project.id} project={project} />
                 ))}
             </div>
-            <div className="mt-12 text-center">
+            <div className="mt-12 text-center text-xl font-rubik">
                 <a
                     href="https://github.com/jkracz"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-8 py-3 bg-growth text-white rounded hover:bg-growth-dark transition-colors duration-200"
+                    className="px-8 py-3 bg-growth rounded hover:bg-growth-dark transition-colors duration-200"
                 >
                     See more projects on GitHub
                 </a>
