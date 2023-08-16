@@ -23,8 +23,8 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en">
-            <body className={`${rubik.variable} ${noto_serif.variable} bg-darkness text-white`}>
+        <html lang="en" className="scroll-smooth">
+            <body className={`${rubik.variable} ${noto_serif.variable} bg-darkness text-white scroll-smooth`}>
                 <Navbar></Navbar>
                 {children}
                 <footer className="font-rubik font-semibold text-slate-300 pt-20 pb-10 flex justify-center">
