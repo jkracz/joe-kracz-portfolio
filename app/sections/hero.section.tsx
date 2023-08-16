@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function HeroSection() {
     return (
-        <div className="flex flex-wrap justify-center items-center font-rubik font-semibold">
+        <div id="hero" className="flex flex-wrap justify-center items-center font-rubik font-semibold">
             <div className=" flex-auto">
                 <h1 className="text-4xl xl:text-7xl italic">Hi,</h1>
                 <h1 className="text-4xl xl:text-7xl italic">

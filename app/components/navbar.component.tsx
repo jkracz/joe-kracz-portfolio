@@ -12,7 +12,9 @@ function Navbar() {
         <div>
             <div className="font-rubik px-10 md:px-20 lg:px-30 xl:px-60 py-4 shadow-md fixed w-full z-50 top-0 bg-darkness">
                 <div className="container flex justify-between items-center">
-                    <img src="/corner-logo.svg" alt="Logo" className="h-12 md:h-16" />
+                    <a href="/">
+                        <img src="/corner-logo.svg" alt="Logo" className="h-12 md:h-16" />
+                    </a>
                     <div className="flex items-center space-x-5 text-xl">
                         <a href="#about" className="hidden lg:block hover:text-growth transition-colors duration-200">
                             About
