@@ -15,9 +15,9 @@ function ProjectsSection({ projects }: ProjectSectionPropsType) {
                     href="https://github.com/jkracz"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-8 py-3 bg-growth rounded hover:bg-growth-dark transition-colors duration-200"
+                    className="px-6 py-2 bg-growth rounded hover:bg-growth-dark transition-colors duration-200"
                 >
-                    See more projects on GitHub
+                    See more on GitHub
                 </a>
             </div>
         </section>
