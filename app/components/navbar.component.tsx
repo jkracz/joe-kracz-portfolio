@@ -11,7 +11,7 @@ function Navbar() {
     return (
         <div>
             <div className="font-rubik px-10 md:px-20 lg:px-30 xl:px-60 py-4 shadow-md fixed w-full z-50 top-0 bg-darkness">
-                <div className="container flex justify-between items-center">
+                <div className="flex justify-between items-center">
                     <a href="/">
                         <img src="/corner-logo.svg" alt="Logo" className="h-12 md:h-16" />
                     </a>
