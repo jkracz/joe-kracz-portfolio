@@ -10,7 +10,7 @@ const projects: Array<ProjectType> = require("./../public/projects.json");
 
 export default function Home() {
     return (
-        <div className="pt-24 px-10 md:px-20 lg:px-30 xl:px-60">
+        <div className="pt-24 px-10 md:px-20 xl:px-30 2xl:px-80">
             <HeroSection></HeroSection>
             <AboutSection></AboutSection>
             <ProjectsSection projects={projects}></ProjectsSection>
