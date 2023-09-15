@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "./components/navbar.component";
+import GoogleAnalytics from "./components/google-analytics.component";
 
 import { Noto_Serif, Rubik } from "next/font/google";
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en" className="scroll-smooth">
             <body className={`${rubik.variable} ${noto_serif.variable} bg-darkness text-white scroll-smooth`}>
+                <GoogleAnalytics />
                 <Navbar></Navbar>
                 {children}
                 <footer className="font-rubik font-semibold text-slate-300 pt-20 pb-10 flex justify-center">

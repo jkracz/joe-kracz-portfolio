@@ -1,12 +1,3 @@
-{
-    /* <a
-href="#connect"
-className="hidden lg:block px-4 py-2 mr-4 bg-growth rounded hover:bg-growth-dark transition-colors duration-200"
->
-Let's Connect
-</a> */
-}
-
 function ResumeSection() {
     return (
         <section id="resume" className="pt-24">
