@@ -10,7 +10,7 @@ function HeroSection() {
                     I'm <span className="text-growth">Joe Kracz</span>
                 </h1>
                 <h3 className="text-lg xl:text-2xl">
-                    A <span className="text-growth">Product Engineer</span> based in Sunnyvale, CA
+                    A <span className="text-growth">Product Builder</span> based in Sunnyvale, CA
                 </h3>
             </div>
             <div className="flex justify-center w-full md:w-1/2 2xl:max-w-lg">
